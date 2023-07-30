@@ -2,8 +2,10 @@ import { BsTrash3 } from 'react-icons/bs';
 import { MdModeEditOutline } from 'react-icons/md';
 import { useState } from 'react';
 
+
 const Todo = () => {
     const [editMode, setEditMode] = useState<boolean>(false);
+
     return (
         <li className=' w-full my-2  border flex gap-3 items-center bg-slate-50 p-5 rounded-md'>
             {
@@ -15,7 +17,7 @@ const Todo = () => {
                     </div>
 
                     : <div className=" w-full">
-                        <p className=' text-slate-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <p className=' text-slate-600'> "" </p>
                     </div>
             }
 

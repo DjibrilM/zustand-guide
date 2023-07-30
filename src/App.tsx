@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Todo from './components/Todo'
 
 
+
 function App() {
 
   return (
@@ -15,7 +16,7 @@ function App() {
           <input placeholder=' Your todo' type="text" className='  px-4 w-full rounded-md border outline-slate-300' />
           <button className=' bg-slate-700 text-white px-10 py-4 active:bg-slate-800 rounded-md '>submit</button>
         </div>
-        
+
         <ul className=' p-5'>
           <Todo />
         </ul>
