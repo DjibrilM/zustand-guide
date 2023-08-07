@@ -30,8 +30,6 @@ function App() {
         </div>
 
         <div className="w-full flex   gap-5 p-5">
-          <input   placeholder=' Your todo' type="text" className='  px-4 w-full rounded-md border outline-slate-300' />
-          <button className=' bg-slate-700 text-white px-10 py-4 active:bg-slate-800 rounded-md '>submit</button>
           <input ref={(el: HTMLInputElement) => input.current = el} placeholder=' Your todo' type="text" className='  px-4 w-full rounded-md border outline-slate-300' />
           <button onClick={() => addTodo()} className=' bg-slate-700 text-white px-10 py-4 active:bg-slate-800 rounded-md '>submit</button>
         </div>

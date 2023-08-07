@@ -40,7 +40,6 @@ const Todo: React.FC<Props> = ({ content, completed, id }) => {
                     </div>
 
                     : <div className=" w-full">
-                        <p className=' text-slate-600'> "" </p>
                         <p style={completed ? { textDecoration: "line-through" } : {}} className=' text-slate-600'> {content} </p>
                     </div>
             }
