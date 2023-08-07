@@ -14,7 +14,7 @@ const Todo: React.FC<Props> = ({ content, completed, id }) => {
     const [editMode, setEditMode] = useState<boolean>(false);
     const [updateValue, setUpdateValue,] = useState<string>(content);
 
-
+    
     //actions from useTodoStore
     const { deleteTodo, updateTodo, markCompleted } = useTodoStore((state) => state);
 
@@ -35,7 +35,7 @@ const Todo: React.FC<Props> = ({ content, completed, id }) => {
                 editMode ?
                     <div className="w-full border ">
                         <form onSubmit={editTodFunction} action="">
-                            <input onChange={(e) => setUpdateValue(e.target.value)} type="text" defaultValue={content} className=' bg-transparent text-slate-500 h-10 w-full outline-none p-2' />
+                            <input autoFocus onChange={(e) => setUpdateValue(e.target.value)} type="text" defaultValue={content} className=' bg-transparent text-slate-500 h-10 w-full outline-none p-2' />
                         </form>
                     </div>
 
