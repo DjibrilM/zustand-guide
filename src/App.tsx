@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import Todo from './components/Todo'
-
-
-
 function App() {
+  const [content, setContent] = useState<string>("");
 
   return (
     <main className=' w-full p-2 min-h-screen bg-slate-200 pt-10'>
@@ -13,7 +11,7 @@ function App() {
         </div>
 
         <div className="w-full flex   gap-5 p-5">
-          <input placeholder=' Your todo' type="text" className='  px-4 w-full rounded-md border outline-slate-300' />
+          <input value={content} onChange={((e) => setContent(e.target.value))} placeholder=' Your todo' type="text" className='  px-4 w-full rounded-md border outline-slate-300' />
           <button className=' bg-slate-700 text-white px-10 py-4 active:bg-slate-800 rounded-md '>submit</button>
         </div>
 
